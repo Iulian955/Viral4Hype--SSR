@@ -1,0 +1,1148 @@
+@import "./../../main.module.scss";
+@import "./../../data//themes.scss";
+@import url("https://fonts.googleapis.com/css2?family=Martel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap");
+
+$myFont: "IBM Plex Sans";
+$myColor: #f26622;
+
+.marketingContainer {
+  width: 100%;
+  max-width: 100rem;
+  margin: auto;
+  height: 100%;
+  position: relative;
+
+  @include media("<tablet") {
+  }
+  @include media(">=tablet", "<desktop") {
+  }
+}
+
+.marketingFirstSection {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 10rem 12%;
+  @include media("<tablet") {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 2rem;
+  }
+  @include media(">=tablet", "<desktop") {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 3rem;
+  }
+}
+
+.marketingTitle {
+  color: #494543;
+  font-family: $myFont;
+  font-size: min(4.2vw, 59px);
+  font-weight: 600;
+  line-height: 73px;
+  letter-spacing: 0em;
+  text-align: left;
+  @include media("<tablet") {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 44px;
+    line-height: 50px;
+  }
+}
+
+.marketingSubTitle {
+  color: #494543;
+  font-family: $myFont;
+  font-size: min(1vw, 14px);
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 2% 0;
+  @include media("<tablet") {
+    font-size: 12px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 14px;
+  }
+}
+
+.marketingBtn {
+  padding: 2rem 0;
+  button {
+    border: none;
+    font-family: $myFont;
+    font-size: min(1.3vw, 16px);
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: linear-gradient(180deg, #e34913 0%, #b913e3 100%);
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    @include media("<tablet") {
+      width: 100%;
+      font-size: 12px;
+    }
+    @include media(">=tablet", "<desktop") {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+  @include media("<tablet") {
+    width: 100%;
+  }
+  @include media(">=tablet", "<desktop") {
+    width: 100%;
+  }
+}
+
+.marketingPhoto {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    @include media("<tablet") {
+      border-radius: 30px;
+    }
+    @include media(">=tablet", "<desktop") {
+      border-radius: 30px;
+    }
+  }
+  @include media("<tablet") {
+    padding: 1em 2em;
+    padding-bottom: 5rem;
+  }
+  @include media(">=tablet", "<desktop") {
+    padding: 1em 2em;
+    padding-bottom: 3rem;
+  }
+}
+
+.marketingClients {
+  display: flex;
+  gap: 4rem;
+  padding: 2rem 0;
+  @include media("<tablet") {
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  @include media(">=tablet", "<desktop") {
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+.marketingClients .client {
+  display: flex;
+  flex-direction: column;
+}
+
+.marketingClients .client:nth-child(1) {
+  padding-right: 3rem;
+  border-right: 2px solid rgba(73, 69, 67, 1);
+}
+
+.marketingClients .client div:nth-child(1) {
+  color: rgba(73, 69, 67, 1);
+  font-family: $myFont;
+  font-size: min(2vw, 32px);
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: center;
+  @include media("<tablet") {
+    font-size: 28px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 30px;
+  }
+  @include media("<phone") {
+    font-size: 22px;
+  }
+}
+
+.marketingClients .client div:nth-child(2) {
+  color: rgba(73, 69, 67, 1);
+  font-family: $myFont;
+  font-size: min(1vw, 16px);
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  @include media("<tablet") {
+    font-size: 12px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 14px;
+  }
+  @include media("<phone") {
+    font-size: 10px;
+  }
+}
+
+.marketingTexts {
+  display: flex;
+  flex-direction: column;
+}
+
+.servicesBtn {
+  button {
+    padding: 0.4rem;
+    background: transparent;
+    font-family: $myFont;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    background:
+      linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(180deg, #e34913 0%, #b913e3 100%) border-box;
+    border: 2px solid transparent;
+    display: inline-block;
+    border-radius: 5px;
+    color: #494543;
+    @include media("<tablet") {
+      font-size: 10px;
+    }
+    @include media(">=tablet", "<desktop") {
+      font-size: 12px;
+    }
+  }
+}
+
+.servicesBtn2 {
+  button {
+    color: white;
+    padding: 0.4rem;
+    font-family: $myFont;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    background:
+      linear-gradient(rgba(13, 13, 12, 1), rgba(13, 13, 12, 1)) padding-box,
+      linear-gradient(180deg, #e34913 0%, #b913e3 100%) border-box;
+    border: 2px solid transparent;
+    display: inline-block;
+    border-radius: 5px;
+    @include media("<tablet") {
+      font-size: 10px;
+    }
+    @include media(">=tablet", "<desktop") {
+      font-size: 12px;
+    }
+  }
+}
+
+.mainTitle {
+  font-family: $myFont;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 62px;
+  letter-spacing: 0em;
+  padding: 3% 0;
+  padding-bottom: 0;
+
+  @include media("<tablet") {
+    line-height: 30px;
+    font-size: 20px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 38px;
+  }
+}
+
+.mainTitle2 {
+  color: white;
+  font-family: $myFont;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 62px;
+  letter-spacing: 0em;
+  padding: 3% 0;
+  padding-bottom: 0;
+
+  @include media("<tablet") {
+    line-height: 26px;
+    font-size: 20px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 38px;
+  }
+}
+
+.subTitle {
+  font-family: $myFont;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  padding: 2% 0;
+
+  @include media("<tablet") {
+    font-size: 12px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 14px;
+  }
+}
+
+.subTitle2 {
+  color: white;
+  font-family: $myFont;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  padding: 2% 0;
+
+  @include media("<tablet") {
+    font-size: 12px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 14px;
+  }
+  @include media("<phone") {
+    font-size: 10px;
+  }
+}
+
+.marketingSecondSection {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 10em 12%;
+
+  @include media("<tablet") {
+    padding: 2em;
+  }
+  @include media(">=tablet", "<desktop") {
+    padding: 3em;
+  }
+}
+
+.judeteContainer {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 2rem;
+  padding: 2rem 0;
+  @include media("<tablet") {
+    display: none;
+  }
+  @include media(">=tablet", "<desktop") {
+    display: none;
+  }
+}
+
+.judetName {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  padding: 2rem 0;
+}
+
+.judeteText {
+  background: radial-gradient(circle at center, rgba(242, 102, 34, 0.15) 1%, rgba(238, 237, 236, 1) 60%);
+  padding: 2rem;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.judetTitle {
+  color: #494543;
+  font-family: $myFont;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-bottom: 1rem;
+}
+
+.inactiveCity {
+  color: #494543;
+  font-family: $myFont;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  border-bottom: 1px solid #494543;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.activeCity {
+  color: #494543;
+  font-family: $myFont;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  border-bottom: 2px solid #f26622;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.servicesMainTitle {
+  font-family: $myFont;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(73, 69, 67, 1);
+  padding: 0.6rem 0;
+  @include media("<tablet") {
+    font-size: 20px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 22px;
+  }
+  @include media("<phone") {
+    font-size: 18px;
+  }
+}
+
+.servicesSmallText {
+  font-family: $myFont;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(134, 130, 126, 1);
+  @include media("<tablet") {
+    font-size: 12px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 14px;
+  }
+  @include media("<phone") {
+    font-size: 10px;
+  }
+}
+.cardsFAQ {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  @include media("<tablet") {
+    grid-template-columns: 100%;
+    gap: 0;
+    padding: 0;
+  }
+  @include media(">=tablet", "<desktop") {
+    grid-template-columns: 100%;
+    gap: 0;
+    padding: 0;
+  }
+}
+
+.cardsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+}
+
+.servicesContent ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: flex-start;
+  padding: 1.5rem 1rem;
+  @include media("<tablet") {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  @include media(">=tablet", "<desktop") {
+    grid-template-columns: 1fr;
+  }
+}
+
+.servicesContent ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0;
+  text-align: left;
+  @include media("<tablet") {
+    font-size: 10px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 12px;
+  }
+  @include media("<phone") {
+    font-size: 8px;
+  }
+}
+
+.judeteResponsive {
+  display: none;
+  @include media("<tablet") {
+    display: block;
+  }
+  @include media(">=tablet", "<desktop") {
+    display: block;
+  }
+}
+
+.marketingThirdSection {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+  padding: 10em 12%;
+
+  @include media("<tablet") {
+    padding: 2em;
+  }
+  @include media(">=tablet", "<desktop") {
+    padding: 3em;
+  }
+}
+
+.marketingMainTitle {
+  font-family: $myFont;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 62px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #494543;
+  @include media("<tablet") {
+    font-size: 30px;
+    line-height: 29px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 44px;
+    line-height: 45px;
+  }
+  @include media("<phone") {
+    font-size: 28px;
+    line-height: 25px;
+  }
+}
+
+.marketingCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 4rem 0;
+
+  @include media("<tablet") {
+    grid-template-columns: 1fr;
+  }
+  @include media(">=tablet", "<desktop") {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cardAdv {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  div {
+    display: flex;
+    gap: 1rem;
+  }
+  @include media("<tablet") {
+    padding: 2rem;
+  }
+  @include media(">=tablet", "<desktop") {
+    grid-template-columns: 1fr;
+  }
+  @include media("<phone") {
+    padding: 0.5rem;
+  }
+}
+
+.cardTitle {
+  font-family: $myFont;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: 0em;
+  color: #494543;
+  text-align: center;
+  @include media("<tablet") {
+    font-size: 20px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 22px;
+  }
+}
+
+.cardText {
+  font-family: $myFont;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center !important;
+  color: #86827e;
+  @include media("<tablet") {
+    font-size: 12px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 14px;
+  }
+  @include media("<phone") {
+    font-size: 10px;
+  }
+}
+
+.cardText2 {
+  font-family: $myFont;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  @include media("<tablet") {
+    font-size: 12px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 14px;
+  }
+  @include media("<phone") {
+    font-size: 10px;
+  }
+}
+
+.marketingForthSection {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 10em 12%;
+
+  @include media("<tablet") {
+    padding: 3em;
+  }
+  @include media(">=tablet", "<desktop") {
+    padding: 3em;
+  }
+}
+
+.stepsContainer {
+  width: 100%;
+  height: 100%;
+  background-color: #eeedec;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.stepBtn {
+  button {
+    width: 8rem;
+    height: 4rem;
+    background-color: #f26622;
+    color: white;
+    font-family: $myFont;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 16px;
+    @include media("<tablet") {
+      width: 4rem;
+      height: 2rem;
+      font-size: 12px;
+      padding: 6px;
+    }
+    @include media(">=tablet", "<desktop") {
+      width: 6rem;
+      height: 3rem;
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+}
+
+.stepTitle {
+  font-family: $myFont;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #494543;
+  @include media("<tablet") {
+    font-size: 18px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 20px;
+  }
+  @include media("<phone") {
+    font-size: 16px;
+  }
+}
+
+.stepSubTitle {
+  font-family: $myFont;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #86827e;
+  @include media("<tablet") {
+    font-size: 12px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 14px;
+  }
+  @include media("<phone") {
+    font-size: 10px;
+  }
+}
+
+.stepsWrapper {
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3rem;
+  @include media("<tablet") {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+  @include media(">=tablet", "<desktop") {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+.stepTexts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.marketingFifthSection {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(13, 13, 12, 1);
+  padding: 10em 12%;
+
+  @include media("<tablet") {
+    padding: 3em;
+  }
+  @include media(">=tablet", "<desktop") {
+    padding: 4em;
+  }
+}
+
+.cardContainer {
+  padding: 3% 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  @include media("<tablet") {
+    grid-template-columns: 1fr;
+  }
+  @include media(">=tablet", "<desktop") {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cardX {
+  background-color: rgba(251, 250, 250, 1);
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 4%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cardX2 {
+  background: radial-gradient(circle at center, rgba(242, 102, 34, 0.15) 1%, rgba(73, 69, 67, 1) 60%);
+  background-color: rgba(73, 69, 67, 1);
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 4%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.cardX2 > :last-child {
+  margin-top: auto;
+}
+
+.headCard {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  div {
+    font-family: $myFont;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0em;
+  }
+  @include media("<tablet") {
+    font-size: 18px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 20px;
+  }
+}
+
+.headCard2 {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  div {
+    font-family: $myFont;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0em;
+    color: white;
+    @include media("<tablet") {
+      font-size: 18px;
+    }
+    @include media(">=tablet", "<desktop") {
+      font-size: 20px;
+    }
+    @include media("<phone") {
+      font-size: 14px;
+    }
+  }
+}
+
+.cardText {
+  font-family: $myFont;
+  font-size: min(1vw, 20px);
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #86827e;
+  @include media("<tablet") {
+    font-size: 14px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 16px;
+  }
+}
+
+.bold {
+  color: rgb(72, 68, 68);
+  font-weight: 600;
+}
+
+.bold2 {
+  color: white;
+  font-weight: bold;
+}
+
+.cardLink {
+  padding-top: 30%;
+  a {
+    text-decoration: underline;
+    font-family: $myFont;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    color: #494543;
+  }
+}
+
+.cardLink2 {
+  padding-top: 30%;
+  a {
+    text-decoration: underline;
+    font-family: $myFont;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    color: white;
+    @include media("<tablet") {
+      font-size: 12px;
+    }
+    @include media(">=tablet", "<desktop") {
+      font-size: 14px;
+    }
+  }
+}
+
+.marketingSixthSection {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  padding: 10rem 12%;
+}
+
+.subscribeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.subscribeTitle {
+  font-family: $myFont;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 62px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(73, 69, 67, 1);
+  @include media("<tablet") {
+    font-size: 35px;
+    line-height: 29px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 44px;
+    line-height: 45px;
+  }
+  @include media("<phone") {
+    font-size: 28px;
+    line-height: 25px;
+  }
+}
+
+.subscribeSubTitle {
+  color: #86827e;
+  font-family: $myFont;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  @include media("<tablet") {
+    font-size: 12px;
+  }
+  @include media(">=tablet", "<desktop") {
+    font-size: 14px;
+  }
+}
+.subscribeInput {
+  width: 350px;
+  input {
+    width: 100%;
+    border: 2px solid #cdc9c7;
+    padding: 0.2rem 1rem;
+    border-radius: 8px;
+  }
+  @include media("<tablet") {
+    width: 100%;
+  }
+  @include media(">=tablet", "<desktop") {
+    width: 100%;
+  }
+}
+
+.sectionBtn {
+  button {
+    border: none;
+    font-family: $myFont;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: #f26622;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    transition: width 0.5s ease;
+    @include media("<tablet") {
+      width: 100%;
+      font-size: 14px;
+    }
+    @include media(">=tablet", "<desktop") {
+      width: 100%;
+    }
+  }
+}
+
+.btnSteps {
+  text-align: center;
+  padding: 4em 0;
+  button {
+    border: none;
+    font-family: $myFont;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: #f26622;
+    color: white;
+    border-radius: 5px;
+    padding: 0.7rem 2rem;
+    @include media("<tablet") {
+      width: 100%;
+      font-size: 14px;
+    }
+    @include media(">=tablet", "<desktop") {
+      width: 100%;
+    }
+  }
+}
+
+.subscribeFlex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  @include media("<tablet") {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: normal;
+  }
+  @include media(">=tablet", "<desktop") {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: normal;
+  }
+}
+
+.interLine {
+  width: 60px;
+  height: 2px;
+  rotate: 270deg;
+  background: linear-gradient(270deg, #ffffff -2.81%, #f39b70 44.72%, #f26622 100.89%);
+  margin-left: 7%;
+
+  @include media("<tablet") {
+    margin-top: 0rem;
+    margin-left: 10%;
+  }
+  @include media(">=tablet", "<desktop") {
+    margin-top: 0rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.subscribeMessage {
+  font-family: $myFont;
+  font-size: 16px;
+  font-weight: 700;
+  color: #f26622;
+  text-align: center;
+  animation: fadeIn 1s forwards;
+}
+
+.messageHide {
+  animation: fadeOut 1s forwards;
+}
+
+.errorMessage {
+  text-align: center;
+  font-family: $myFont;
+  font-size: 14px;
+  font-weight: 500;
+  color: red;
+  margin-top: 8px;
+  @include media("<tablet") {
+    text-align: left;
+    font-size: 12px;
+  }
+}
+
+.inputError {
+  border: 1px solid red !important;
+  color: red !important;
+
+  &::placeholder {
+    color: red;
+    font-family: $myFont;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+.fullWidthBtn {
+  text-align: center;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.subscribeInput {
+  transition: opacity 0.5s ease;
+}
+
+.sectionBtn {
+  transition: width 0.5s ease;
+}
+
+.subscribeNone {
+  display: none;
+}
